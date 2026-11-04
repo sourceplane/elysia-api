@@ -7,6 +7,6 @@ folder is the adoption; the merge creates the epic in the workspace.
 
 | Epic | Cluster | Status | What it is |
 |------|---------|--------|------------|
-| [`elysia-api/`](./elysia-api/) | **EL** | In progress (EL0) | Vercel's Elysia on Vercel template, its route kept, on Elysia's own Cloudflare adapter in one Cloudflare Worker — and an Orun baseline that instantiates it in one landing (EL2) |
+| [`elysia-api/`](./elysia-api/) | **EL** | In progress (EL1: the site on Workers) | Vercel's Elysia on Vercel template, its route kept, on Elysia's own Cloudflare adapter in one Cloudflare Worker — and an Orun baseline that instantiates it in one landing (EL2) |
 
 As-built ≠ intent: what shipped lives in each epic's `IMPLEMENTATION-STATUS.md`.
