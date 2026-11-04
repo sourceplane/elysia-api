@@ -1,0 +1,30 @@
+# The epic's declaration. metadata.name equals the directory name; metadata.key
+# is the task-key prefix this epic reserves (EL → EL-1, EL-2, …). Owner, target
+# date and health are the platform's — never written here.
+apiVersion: orun.io/v1
+kind: Epic
+metadata:
+  name: elysia-api
+  key: EL
+spec:
+  title: "Vercel's Elysia template on Cloudflare Workers"
+  summary: "Vercel's Elysia on Vercel template — an Elysia server whose one route answers with the template's welcome page — runs as one Cloudflare Worker on Elysia's own Cloudflare adapter, beside a health route, inside the Cirrus baseline's repository conventions, and becomes an Orun baseline that takes a new Elysia server from nothing to live on stage and prod in one landing."
+  state: started
+  milestones:
+    - name: "EL0 — the spec"
+      exitCriteria:
+        - "the repository is born with its intent, CI, tooling and spec index, and this doc set and the task contracts are on main"
+      tasks: [EL-1]
+    - name: "EL1 — Elysia on Workers"
+      exitCriteria:
+        - "apps/api is the upstream Elysia app (src/index.ts, its one route) on Elysia's Cloudflare adapter with .compile(), bundled by wrangler as the Worker the committed wrangler.jsonc names, with a /health route and one name seam"
+        - "`pnpm typecheck`, `pnpm lint`, `pnpm test` and `pnpm build` are green, the tests calling every route of the same app module with web-standard Requests on Node"
+        - "`wrangler dev` answers the welcome page, /health for its environment and Elysia's 404"
+        - "the README says how to run, test and deploy it, and how every Vercel piece maps to Cloudflare"
+      tasks: [EL-2]
+    - name: "EL2 — a baseline"
+      exitCriteria:
+        - "blueprint.yaml (the console card) and repo-blueprint.yaml (the build) take a new Elysia server from nothing to live on stage and prod in one landing, then record it"
+        - "an app built from it carries the app only, renamed throughout to its own name, repository and Worker, with the example's licence intact"
+        - "Baseline CI is green: contract tests, generated component docs, the blueprint read by the pinned orun, the leak gate, the offline bootstrap and the end-to-end tier — the stage lane's steps in a staged job tree, the Worker smoke-tested and every route read"
+      tasks: [EL-3]
