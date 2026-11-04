@@ -10,7 +10,7 @@ in one landing.**
 
 | | |
 |---|---|
-| Status | In progress — EL1 on main: the site runs on Workers |
+| Status | ✅ Shipped (`baseline-v1`) — proven offline in Baseline CI; not yet live (risk EL-A) |
 | Upstream | [vercel/vercel `examples/elysia`](https://github.com/vercel/vercel/tree/main/examples/elysia) (Apache-2.0), at `84878e5` (2026-10-27; the example last changed in `b998cf7`) |
 | Reference | [nitro-boilerplate](https://github.com/sourceplane/nitro-boilerplate) — the same plain Worker, scaffolding, tests and bootstrap; [hono-api](https://github.com/sourceplane/hono-api) — the same wrangler-bundled app module |
 | Key | `EL` |

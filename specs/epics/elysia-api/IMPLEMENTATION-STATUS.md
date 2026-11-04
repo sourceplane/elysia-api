@@ -4,7 +4,7 @@
 |---|---|---|
 | EL0 — the spec | ✅ | EL-1 |
 | EL1 — Elysia on Workers | ✅ | EL-2 |
-| EL2 — a baseline | planned | EL-3 |
+| EL2 — a baseline | ✅ | EL-3, tagged `baseline-v1` |
 
 ## Departures from the upstream template
 

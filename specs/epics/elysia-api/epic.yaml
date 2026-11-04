@@ -9,7 +9,7 @@ metadata:
 spec:
   title: "Vercel's Elysia template on Cloudflare Workers"
   summary: "Vercel's Elysia on Vercel template — an Elysia server whose one route answers with the template's welcome page — runs as one Cloudflare Worker on Elysia's own Cloudflare adapter, beside a health route, inside the Cirrus baseline's repository conventions, and becomes an Orun baseline that takes a new Elysia server from nothing to live on stage and prod in one landing."
-  state: started
+  state: completed
   milestones:
     - name: "EL0 — the spec"
       exitCriteria:
