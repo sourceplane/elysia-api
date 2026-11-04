@@ -1,0 +1,17 @@
+apiVersion: orun.io/v1
+kind: TaskContract
+metadata:
+  name: EL-2
+  title: "Elysia on Workers"
+spec:
+  goal: Vercel's Elysia on Vercel template runs as one Cloudflare Worker — the template's Elysia app on Elysia's own Cloudflare adapter, compiled at module scope and bundled by wrangler — with its tests, and its README saying how it maps to Vercel
+  affects:
+    - apps/api
+    - tests/api
+    - pnpm-lock.yaml
+    - pnpm-workspace.yaml
+    - README.md
+  doneWhen:
+    - pnpm typecheck, lint, test and build are green
+    - wrangler dev answers the welcome page, /health and Elysia's 404
+  gates: []
